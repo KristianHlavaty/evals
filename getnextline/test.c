@@ -18,7 +18,7 @@ int main(void)
     while ((line = get_next_line(fd)) != NULL)
     {
         printf("%s", line);
-        free(line);  // Remember to free the allocated line
+        free(line);
     }
     close(fd);
 
